@@ -1,5 +1,6 @@
 package com.gitexplorer.core.data;
 
+<<<<<<< HEAD
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,4 +23,11 @@ public class TrendingReport implements Serializable {
     private int forks;
     private int currentPeriodStars;
     private List<TrendingReportContributor> builtBy;
+=======
+import lombok.Data;
+
+@Data
+public class TrendingReports {
+    private 
+>>>>>>> master
 }

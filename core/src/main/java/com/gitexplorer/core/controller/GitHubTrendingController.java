@@ -1,5 +1,6 @@
 package com.gitexplorer.core.controller;
 
+<<<<<<< HEAD
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.gitexplorer.core.data.TrendingReport;
 import org.apache.http.HttpEntity;
@@ -31,4 +32,7 @@ public class GitHubTrendingController {
         CloseableHttpResponse response = httpclient.execute(httpGet);
         return new ObjectMapper().readValue(response.getEntity().getContent(), TrendingReport[].class);
     }
+=======
+public class GitHubTrendingController {
+>>>>>>> master
 }
