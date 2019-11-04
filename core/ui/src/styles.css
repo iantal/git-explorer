@@ -1,0 +1,201 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+
+mat-keyboard-container {
+  max-width: 1300px !important;
+}
+
+.mat-keyboard-wrapper {
+  width: 1350px;
+}
+
+.mat-keyboard-row {
+  height: 80px;
+}
+
+.numericKeyboard .mat-keyboard-wrapper {
+  width: 480px !important;
+}
+
+.numericKeyboard .mat-keyboard-row {
+  height: 100px !important;
+}
+
+mat-keyboard-container.numericKeyboard {
+  max-width: 500px !important;
+  min-width: 450px !important;
+}
+
+.mat-keyboard-key {
+  font-size: 30px !important;
+}
+
+body {
+  background: var(--dark-color);
+  line-height: unset;
+}
+
+.splash-screen {
+  background: var(--dark-color) !important;
+  background-color: var(--dark-color) !important;
+}
+
+.splash-loader {
+  background: var(--dark-color) !important;
+  background-color: var(--dark-color) !important;
+  border: 10px solid var(--dark-color) !important;
+}
+
+.text-style {
+  color: white;
+  font-size: 40px;
+}
+
+.text-style-small {
+  color: white;
+  font-size: 15px;
+}
+
+
+.gradient-logo-background {
+  background: rgb(252, 252, 252);
+  background: -moz-linear-gradient(90deg, rgba(252, 252, 252, 1) 63%, rgba(64, 64, 64, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(252, 252, 252, 1) 63%, rgba(64, 64, 64, 1) 100%);
+  background: linear-gradient(90deg, rgba(252, 252, 252, 1) 63%, rgba(64, 64, 64, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcfcfc", endColorstr="#404040", GradientType=1);
+}
+
+.topbar-height {
+  height: 85px;
+}
+
+.content-height {
+  height: 983px;
+}
+
+.center-info-height {
+  height: 903px;
+}
+
+.bottom-height {
+  height: 80px;
+}
+
+.status-bar {
+  height: 30px;
+  background: var(--light-color);
+}
+
+.buttons-bar {
+  height: 50px;
+  text-align: center;
+}
+
+.background-light-color {
+  background-color: var(--dark-color) !important;
+}
+
+.background-dark-color {
+  background-color: var(--dark-color) !important;
+}
+
+:root {
+  --light-color-input: #919191;
+  --light-color: #595959;
+  --dark-color: #404040;
+  --accent-color: #0070c0;
+  --actual-color: #00b0f0;
+  --target-color: #00b050;
+  --productivity-color: #ffc000;
+  --offline-color: red;
+  --online-color: #00b050;
+  --light-grey-transparent: rgba(155, 155, 155, 0.4);
+}
+
+p {
+  color: white;
+  /* margin-top: 20px !important;*/
+}
+
+.rotate {
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+.centered {
+  text-align: center !important;
+}
+
+.light-color-border-up-bottom {
+  border-top: 0.5px solid var(--light-color);
+  border-bottom: 0.5px solid var(--light-color);
+}
+
+.dark-color-border-up-bottom {
+  border-top: 0.5px solid var(--dark-color);
+  border-bottom: 0.5px solid var(--dark-color);
+}
+
+.light-color-border {
+  border: 0.5px solid var(--light-color);
+}
+
+.dark-color-border {
+  border: 0.5px solid var(--dark-color);
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.padding-right-left {
+  /*  padding-left: 5px;
+    padding-right: 5px;*/
+  padding: 0px 5px;
+}
+
+
+.flex-container {
+  display: -webkit-box; /* iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* Firefox 19 */
+  display: -ms-flexbox; /* IE 10 */
+  display: -webkit-flex; /* Chrome */
+  display: flex; /* Opera 12.1, Firefox 20+ */
+}
+
+.header-shift-table {
+  background: black !important;
+  color: white !important;
+}
+
+.status-text {
+  text-align: left;
+  font-size: 17px;
+  margin-top: 5px;
+  letter-spacing: 1.5px;
+}
+
+.titleDiv {
+  background: var(--light-color-input);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+::ng-deep body .dialog-style .ui-widget-content {
+  background: var(--light-grey-transparent) !important;
+  border: none !important;
+}
+
+.bottomDiv {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  position: absolute;
+}

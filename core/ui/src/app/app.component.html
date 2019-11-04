@@ -1,0 +1,35 @@
+<div class="layout-wrapper" style="margin: 0px; padding:0px">
+  <div class="layout-main" style="margin: 0px; padding:0px">
+    <div class="layout-main-content" style="margin: 0px; padding:0px">
+      <div class="topbar-height" style="margin-bottom:5px">
+        <div class="ui-g topbar-height">
+          <div class="ui-g-3 gradient-logo-background topbar-height">
+            <img src="assets/images/flag_ro.png" style="height: 75px;
+             width: 281px;">
+
+          </div>
+          <div class="ui-g-5 topbar-height" style="text-align: center;">
+            <p class="text-style" style="margin-top:15px"> Git-Explorer </p>
+          </div>
+
+          <div class="ui-g-2 topbar-height" style="text-align:right">
+            <div style="margin-top:15px;">
+              <img src="assets/images/flag_en.png" width="50px" height="40px" (click)="changeLanguage('en')"
+                   style="margin-right:20px;margin-top:5px;    border: 1px solid grey;">
+              <img src="assets/images/flag_ro.png" width="50px" height="40px" (click)="changeLanguage('ro')"
+                   style="margin-right:20px;margin-top:5px;    border: 1px solid grey;"></div>
+          </div>
+
+          <div class="ui-g-2 topbar-height" style="text-align:center">
+            <p class="text-style" style="margin-top:5px;margin-bottom: 3px;">{{today | date:'HH:mm'}}</p>
+            <p class="text-style-small" style="margin-top:3px">{{ 'COMPONENT1.SUB-COMPONENT1' | translate }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="content-height">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+
+</div>

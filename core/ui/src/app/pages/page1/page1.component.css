@@ -1,0 +1,77 @@
+::ng-deep body .mat-list-text {
+  flex-direction: row !important;
+}
+
+::ng-deep body .mat-list-base .mat-list-item {
+  height: 48px !important;
+}
+
+::ng-deep body mat-list {
+  flex-grow: 1;
+  /*  border: 3px solid green;*/
+  overflow: auto;
+  max-height: 983px;
+}
+
+.docHeader {
+  margin: 0px;
+  padding: 0 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.docText {
+  color: white;
+}
+
+.folderText {
+  font-weight: bold !important;
+  text-decoration: underline;
+}
+
+.fileText {
+  font-weight: bold !important;
+}
+
+.parentTextDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 16px !important;
+}
+
+.parentIcon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  box-sizing: content-box;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.parentText {
+  padding: 0 0 0 16px !important;
+  margin: 0;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: context-menu;
+}
+
+.imgDiv {
+  /*  height: 900px;*/
+  width: 1900px;
+  background-color: blue;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.imgDiv > img {
+  position: relative;
+}
+
+.folderPath {
+  font-size: 25px;
+  font-weight: bold;
+}

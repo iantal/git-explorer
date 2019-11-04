@@ -1,0 +1,10 @@
+{
+  "COMPONENT1": {
+    "SUB-COMPONENT1": "Sub-Component 1",
+    "SUB-COMPONENT2": "Sub-Component 2"
+  },
+  "COMPONENT2": {
+    "SUB-COMPONENT1": "Sub-Component 1",
+    "SUB-COMPONENT2": "Sub-Component 2"
+  }
+}

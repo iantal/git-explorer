@@ -1,0 +1,22 @@
+<div class="ui-g" style="width:1900px; height:1050px;margin:auto;top: 0;
+    position: absolute;
+    background: white" *ngIf="booleanValue">
+  <div class="ui-g-12 no-padding no-margin" style="height:50px" *ngIf="booleanValue">
+    <div class="ui-g-11 no-margin no-padding">
+      <div class="no-padding no-margin" *ngIf="images.length>1">
+        <ng-container *ngFor="let it of images; let i = index">
+          <button pButton (click)="showAnotherPage(i)" label="{{ 'COMPONENT1.SUB-COMPONENT1' | translate }} {{i.valueOf()+1}}"></button>
+        </ng-container>
+      </div>
+      <div class="no-padding no-margin" *ngIf="images.length<2">
+        <p style="color:black"> {{ 'COMPONENT1.SUB-COMPONENT1' | translate }} 1</p>
+      </div>
+    </div>
+    <div class="ui-g-1 no-margin no-padding" style="text-align: right;">
+      <button pButton (click)="exitFullScreen()" label="{{ 'COMPONENT1.SUB-COMPONENT2' | translate }}"></button>
+    </div>
+  </div>
+  <div class="imgDiv no-padding no-margin" *ngIf="booleanValue">
+    <img [src]="selectedPage" width="1900px" alt="{{ 'COMPONENT1.SUB-COMPONENT3' | translate }}" *ngIf="booleanValue">
+  </div>
+</div>
