@@ -1,4 +1,9 @@
 {
+  "DASHBOARD": {
+    "PAGE1": "Page1",
+    "PAGE2": "Page2",
+    "ABOUT": "About"
+  },
   "COMPONENT1": {
     "SUB-COMPONENT1": "Sub-Component 1",
     "SUB-COMPONENT2": "Sub-Component 2"

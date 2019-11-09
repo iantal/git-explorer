@@ -1,4 +1,9 @@
 {
+  "DASHBOARD": {
+    "PAGE1": "Pagina1",
+    "PAGE2": "Pagina2",
+    "ABOUT": "Despre"
+  },
   "COMPONENT1": {
     "SUB-COMPONENT1": "Sub-Componenta 1",
     "SUB-COMPONENT2": "Sub-Componenta a 2-a"

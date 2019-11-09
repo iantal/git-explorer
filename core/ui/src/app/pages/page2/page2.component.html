@@ -17,21 +17,18 @@
 
     </div>
 
-    <p-dataView #dvl [value]="field2" [layout]="'grid'" [paginator]="true" [rows]="24">
-      <p-header><span style="font-size:25px;display:inline-block;">{{ 'COMPONENT2.SUB-COMPONENT2' | translate }}</span>
-      </p-header>
-      <ng-template let-line pTemplate="gridItem">
-        <div class="ui-g-2">
-          <button class="line_buttons" type="text" pButton (click)="navigateMethod1(line)"
-                  label="{{line}}"></button>
-        </div>
-      </ng-template>
+    <!-- <p-dataView #dvl [value]="field2" [layout]="'grid'" [paginator]="true" [rows]="24">
+       <p-header><span style="font-size:25px;display:inline-block;">{{ 'COMPONENT2.SUB-COMPONENT2' | translate }}</span>
+       </p-header>
+       <ng-template let-line pTemplate="gridItem">
+         <div class="ui-g-2">
+           <button class="line_buttons" type="text" pButton (click)="navigateMethod1(line)"
+                   label="{{line}}"></button>
+         </div>
+       </ng-template>
 
-    </p-dataView>
+     </p-dataView>-->
 
 
   </div>
-</div>
-<div class="bottomDiv">
-  <app-buttons-bar [isVisible]="false" [lines]="true"></app-buttons-bar>
 </div>
