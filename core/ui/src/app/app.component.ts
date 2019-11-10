@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
+import {TrendingRepositories} from "./components/TrendingRepositories";
+import {TrendingRepositoriesService} from "./services/trendingRepositories.service";
 
 @Component({
   selector: 'app-root',
@@ -10,8 +12,9 @@ export class AppComponent {
   title = 'GitExplorerAngular';
   selectedLanguage: string;
   today: number = Date.now();
+  trendingRepositories: TrendingRepositories;
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private trendingRepositoriesService: TrendingRepositoriesService) {
 
     translate.addLangs(['ro', 'en']);
     translate.setDefaultLang('ro');
@@ -25,6 +28,8 @@ export class AppComponent {
     setInterval(() => {
       this.today = Date.now();
     }, 60000);
+
+    this.getTrendingRepositories();
   }
 
   onChangeLanguage(event) {
@@ -38,5 +43,13 @@ export class AppComponent {
     this.translate.setDefaultLang(language);
   }
 
+  getTrendingRepositories() {
+    this.trendingRepositoriesService.getAllTrendingRepositories().then((result) => {
+      this.trendingRepositories = result;
+      console.log(result);
+    }).catch((error) => {
+      console.error(error);
+    });
+  }
 
 }

@@ -2,7 +2,8 @@
   "DASHBOARD": {
     "PAGE1": "Pagina1",
     "PAGE2": "Pagina2",
-    "ABOUT": "Despre"
+    "ABOUT": "Despre",
+    "REPOSITORIES": "Repository-uri"
   },
   "COMPONENT1": {
     "SUB-COMPONENT1": "Sub-Componenta 1",

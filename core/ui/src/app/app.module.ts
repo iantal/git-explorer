@@ -34,11 +34,11 @@ import {
   InputTextareaModule,
   InputTextModule,
   MessageService,
-  MessagesModule,
+  MessagesModule, OrderListModule,
   SplitButtonModule
 } from 'primeng/primeng';
 import {FormsModule} from "@angular/forms";
-import {Service1Service} from "./services/service1.service";
+import {TrendingRepositoriesService} from "./services/trendingRepositories.service";
 import {Service2Service} from "./services/service2.service";
 
 // AoT requires an exported function for factories
@@ -70,11 +70,11 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     TableModule, ChartModule, ChartsModule, NumberPickerModule, CalendarModule,
     FormsModule, MatNativeDateModule, MatDatepickerModule, SplitButtonModule,
     MatFormFieldModule, MatInputModule, InputTextModule, InputTextareaModule,
-    DropdownModule, MatKeyboardModule, MessagesModule, MatIconModule, MatListModule
+    DropdownModule, MatKeyboardModule, MessagesModule, MatIconModule, MatListModule, OrderListModule
   ],
   providers: [{provide: MAT_DATE_LOCALE, useValue: 'ro'},
     {provide: LocationStrategy, useClass: HashLocationStrategy},
-    Service1Service, Service2Service, ThemeService, MessageService],
+    TrendingRepositoriesService, Service2Service, ThemeService, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
