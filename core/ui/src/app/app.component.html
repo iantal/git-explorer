@@ -30,7 +30,7 @@
         <p-orderList [value]="trendingRepositories">
           <ng-template let-trendingRepository pTemplate="item">
             <div class="ui-helper-clearfix">
-              <div style="font-size:14px;float:right;margin:15px 5px 0 0">{{trendingRepository.author}} - {{trendingRepository.name}} </div>
+              <div style="font-size:14px;float:left;margin:15px 5px 0 0">{{trendingRepository.author}}: {{trendingRepository.name}} </div>
             </div>
           </ng-template>
         </p-orderList>

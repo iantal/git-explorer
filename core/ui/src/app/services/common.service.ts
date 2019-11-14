@@ -7,7 +7,7 @@ export class CommonService {
 
   protected entity: String = '';
 
-  protected httpBaseAddress: String = 'http://localhost:8080/';
+  protected httpBaseAddress: String = 'http://localhost:8083/';
 
   constructor() {
   }
