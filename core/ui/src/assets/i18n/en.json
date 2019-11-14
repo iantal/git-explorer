@@ -5,9 +5,9 @@
     "ABOUT": "About",
     "REPOSITORIES": "Repositories"
   },
-  "COMPONENT1": {
-    "SUB-COMPONENT1": "Sub-Component 1",
-    "SUB-COMPONENT2": "Sub-Component 2"
+  "TOP-REPOSITORIES": {
+    "TR-LIST": "Top Repositories list",
+    "FILTER": "Filter by name"
   },
   "COMPONENT2": {
     "SUB-COMPONENT1": "Sub-Component 1",

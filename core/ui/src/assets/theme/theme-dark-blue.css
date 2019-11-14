@@ -27194,6 +27194,7 @@ body .ui-widget-content {
 }
 body .ui-widget-content .pi {
   color: #757575;
+  left: 0.2em;
 }
 body .ui-widget-header {
   background-color: #3e464c;

@@ -24,13 +24,12 @@
       </div>
 
       <div style="text-align: center">
-        <p class="text-style-small"
-           style="margin-top:3px; color: #378dcc;">{{ 'COMPONENT1.SUB-COMPONENT1' | translate }}</p>
-
-        <p-orderList [value]="trendingRepositories">
+        <p-orderList [value]="trendingRepositories" [listStyle]="{'height':'250px'}" header="{{ 'TOP-REPOSITORIES.TR-LIST' | translate }}"
+                     filter="filter" filterBy="name" filterPlaceholder="{{ 'TOP-REPOSITORIES.FILTER' | translate }}">
           <ng-template let-trendingRepository pTemplate="item">
             <div class="ui-helper-clearfix">
-              <div style="font-size:14px;float:left;margin:15px 5px 0 0">{{trendingRepository.author}}: {{trendingRepository.name}} </div>
+              <div style="font-size:14px;float:left;margin:15px 5px 0 0">{{trendingRepository.author}}
+                : {{trendingRepository.name}} </div>
             </div>
           </ng-template>
         </p-orderList>
