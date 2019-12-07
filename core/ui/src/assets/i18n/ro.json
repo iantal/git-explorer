@@ -1,11 +1,17 @@
 {
   "DASHBOARD": {
-    "PAGE1": "Pagina1",
-    "PAGE2": "Pagina2",
-    "ABOUT": "Despre",
-    "REPOSITORIES": "Repository-uri"
+    "HOME": "ACASA",
+    "PAGE2": "PAGINA 2",
+    "ABOUT": "DESPRE",
+    "REPOSITORIES": "Repository-uri",
+    "HEADLINE1": "Nu rata tendintele in materie de cod!",
+    "HEADLINE2": "Vezi ultimele topuri si fii inspirat de cele mai populare repository-uri de pe GitHub",
+    "HEADLINE3": "Repository-uri de top"
   },
   "TOP-REPOSITORIES": {
+    "AUTHOR": "Autor",
+    "NAME": "Nume",
+    "LANGUAGE": "Limbaj",
     "TR-LIST": "Lista repository-uri de top",
     "FILTER": "Filtru dupa nume"
   },

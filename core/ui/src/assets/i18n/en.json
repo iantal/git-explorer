@@ -1,12 +1,18 @@
 {
   "DASHBOARD": {
-    "PAGE1": "Page1",
-    "PAGE2": "Page2",
-    "ABOUT": "About",
-    "REPOSITORIES": "Repositories"
+    "HOME": "HOME",
+    "PAGE2": "PAGE 2",
+    "ABOUT": "ABOUT",
+    "REPOSITORIES": "Repositories",
+    "HEADLINE1": "Never miss what's trending right now!",
+    "HEADLINE2": "See the latest tops and get inspired by the latest and greatest repositories on GitHub",
+    "HEADLINE3": "Top Trending Repositories"
   },
   "TOP-REPOSITORIES": {
-    "TR-LIST": "Top Repositories list",
+    "AUTHOR": "Author",
+    "NAME": "Name",
+    "LANGUAGE": "Language",
+    "TR-LIST": "List of Top Repositories",
     "FILTER": "Filter by name"
   },
   "COMPONENT2": {
