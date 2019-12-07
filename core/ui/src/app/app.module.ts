@@ -34,7 +34,7 @@ import {
   InputTextareaModule,
   InputTextModule,
   MessageService,
-  MessagesModule, OrderListModule,
+  MessagesModule, OrderListModule, PanelModule,
   SplitButtonModule
 } from 'primeng/primeng';
 import {FormsModule} from "@angular/forms";
@@ -70,7 +70,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     TableModule, ChartModule, ChartsModule, NumberPickerModule, CalendarModule,
     FormsModule, MatNativeDateModule, MatDatepickerModule, SplitButtonModule,
     MatFormFieldModule, MatInputModule, InputTextModule, InputTextareaModule,
-    DropdownModule, MatKeyboardModule, MessagesModule, MatIconModule, MatListModule, OrderListModule
+    DropdownModule, MatKeyboardModule, MessagesModule, MatIconModule, MatListModule, OrderListModule, PanelModule
   ],
   providers: [{provide: MAT_DATE_LOCALE, useValue: 'ro'},
     {provide: LocationStrategy, useClass: HashLocationStrategy},

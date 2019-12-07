@@ -200,3 +200,42 @@ p {
   position: absolute;
 }
 
+.image-logo {
+  float: left;
+  margin-top: 0;
+}
+
+.language-icon {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  float: right;
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+}
+
+.language-icon-active {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  float: right;
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  border: 1px solid #ffffff;
+}
+
+.feature-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.frontpage-text {
+  margin: 0 0 16px 0;
+  font-size: 76px !important;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #1976d2;
+}

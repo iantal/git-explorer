@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {TrendingRepositories} from "./components/TrendingRepositories";
 import {TrendingRepositoriesService} from "./services/trendingRepositories.service";
+import {LazyLoadEvent} from "primeng/api";
 
 @Component({
   selector: 'app-root',
@@ -9,15 +10,21 @@ import {TrendingRepositoriesService} from "./services/trendingRepositories.servi
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'GitExplorerAngular';
+  title = 'GitExplorer';
   selectedLanguage: string;
   today: number = Date.now();
-  trendingRepositories: TrendingRepositories;
+  totalTrendingRepositories: TrendingRepositories[];
+  pageTrendingRepositories: TrendingRepositories[];
+  currentLanguageEng: boolean;
+  loading: boolean = false;
+  trendingRepositoriesColumns: Array<any> = [];
+  totalNumberOfTrendingRepositories: number;
 
   constructor(private translate: TranslateService, private trendingRepositoriesService: TrendingRepositoriesService) {
 
     translate.addLangs(['ro', 'en']);
-    translate.setDefaultLang('ro');
+    translate.setDefaultLang('en');
+    this.currentLanguageEng = true;
 
     if (this.translate.currentLang === undefined) {
       this.selectedLanguage = this.translate.defaultLang;
@@ -29,27 +36,42 @@ export class AppComponent {
       this.today = Date.now();
     }, 60000);
 
-    this.getTrendingRepositories();
-  }
+    // this.getTrendingRepositories();
 
-  onChangeLanguage(event) {
-    console.log('event :');
-    console.log(event);
-    console.log(event.value);
-    this.translate.setDefaultLang(event.value);
+    this.trendingRepositoriesColumns = [
+      {field: 'author', header: 'Author'},
+      {field: 'name', header: 'Name'},
+      {field: 'language', header: 'Language'}
+    ];
   }
 
   changeLanguage(language: string) {
     this.translate.setDefaultLang(language);
+
+    if (language != this.translate.langs[1]) {
+      this.currentLanguageEng = false;
+    } else {
+      this.currentLanguageEng = true;
+    }
   }
 
-  getTrendingRepositories() {
+  getTrendingRepositories(event: LazyLoadEvent) {
+    this.loading = true;
     this.trendingRepositoriesService.getAllTrendingRepositories().then((result) => {
-      this.trendingRepositories = result;
+      this.totalTrendingRepositories = result;
+      this.pageTrendingRepositories = result.slice(event.first, (event.first + event.rows));
       console.log(result);
+      this.totalNumberOfTrendingRepositories = this.totalTrendingRepositories.length;
+      this.loading = false;
     }).catch((error) => {
       console.error(error);
     });
+    this.loading = false;
   }
 
+  loadTrendingRepositoriesLazy(event: LazyLoadEvent) {
+      this.loading = true;
+      this.getTrendingRepositories(event);
+      this.loading = false;
+  }
 }
