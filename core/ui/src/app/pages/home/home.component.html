@@ -1,0 +1,54 @@
+<div class="layout-main" id="content">
+  <div class="ui-g-12" style="text-align: center;">
+    <div class="card card-w-title" style="margin-top: 100px;">
+      <h1 class="frontpage-text">
+        {{ 'DASHBOARD.HEADLINE1' | translate }}
+      </h1>
+      <h2 style="color: #1976d2">
+        {{ 'DASHBOARD.HEADLINE2' | translate }}
+      </h2>
+
+      <div>
+        <a href="https://github.com/" target="_blank">
+          <img style="width: 130px; height: 100px;" src="assets/images/github-logo.png"/>
+        </a>
+      </div>
+    </div>
+
+    <div style="margin-top: 50px;">
+      <a>
+        <img style="width: 60px; height: 60px;" src="assets/images/trending.png"/>
+      </a>
+      <h3 style="display: inline-block;">
+        {{ 'DASHBOARD.HEADLINE3' | translate }}
+      </h3>
+      <a>
+        <img style="width: 60px; height: 60px;" src="assets/images/trending.png"/>
+      </a>
+    </div>
+
+    <div>
+      <p-table #dt [columns]="trendingRepositoriesColumns" [value]="pageTrendingRepositories" [resizableColumns]="true"
+               [lazy]="true" (onLazyLoad)="loadTrendingRepositoriesLazy($event)"
+               [loading]="loading" loadingIcon="fa-spinner"
+               [paginator]="true" [rows]="5" [totalRecords]="totalNumberOfTrendingRepositories"
+               [responsive]="true">
+        <ng-template pTemplate="header" let-columns>
+          <tr>
+            <th style="background: #a0caf3;">{{ 'TOP-REPOSITORIES.AUTHOR' | translate }}</th>
+            <th style="background: #a0caf3;">{{ 'TOP-REPOSITORIES.NAME' | translate }}</th>
+            <th style="background: #a0caf3;">{{ 'TOP-REPOSITORIES.LANGUAGE' | translate }}</th>
+          </tr>
+        </ng-template>
+
+        <ng-template pTemplate="body" let-rowData let-columns="columns">
+          <tr [pSelectableRow]="rowData">
+            <td *ngFor="let col of columns">
+              {{rowData[col.field]}}
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </div>
+</div>

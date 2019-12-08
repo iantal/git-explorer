@@ -15,8 +15,10 @@
     "TR-LIST": "List of Top Repositories",
     "FILTER": "Filter by name"
   },
-  "COMPONENT2": {
-    "SUB-COMPONENT1": "Sub-Component 1",
-    "SUB-COMPONENT2": "Sub-Component 2"
+  "PAGE2": {
+    "DESCRIPTION": "YOU ARE ON PAGE 2!"
+  },
+  "ABOUT": {
+    "DESCRIPTION": "YOU ARE ON THE ABOUT PAGE!"
   }
 }

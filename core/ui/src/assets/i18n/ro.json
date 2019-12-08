@@ -15,8 +15,10 @@
     "TR-LIST": "Lista repository-uri de top",
     "FILTER": "Filtru dupa nume"
   },
-  "COMPONENT2": {
-    "SUB-COMPONENT1": "Sub-Componenta 1",
-    "SUB-COMPONENT2": "Sub-Componenta a 2-a"
+  "PAGE2": {
+    "DESCRIPTION": "SUNTETI PE PAGINA 2!"
+  },
+  "ABOUT": {
+    "DESCRIPTION": "SUNTETI PE PAGINA DESPRE!"
   }
 }

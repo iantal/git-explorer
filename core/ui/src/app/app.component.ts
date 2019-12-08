@@ -1,8 +1,5 @@
 import {Component} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
-import {TrendingRepositories} from "./components/TrendingRepositories";
-import {TrendingRepositoriesService} from "./services/trendingRepositories.service";
-import {LazyLoadEvent} from "primeng/api";
 
 @Component({
   selector: 'app-root',
@@ -13,14 +10,11 @@ export class AppComponent {
   title = 'GitExplorer';
   selectedLanguage: string;
   today: number = Date.now();
-  totalTrendingRepositories: TrendingRepositories[];
-  pageTrendingRepositories: TrendingRepositories[];
   currentLanguageEng: boolean;
   loading: boolean = false;
   trendingRepositoriesColumns: Array<any> = [];
-  totalNumberOfTrendingRepositories: number;
 
-  constructor(private translate: TranslateService, private trendingRepositoriesService: TrendingRepositoriesService) {
+  constructor(private translate: TranslateService) {
 
     translate.addLangs(['ro', 'en']);
     translate.setDefaultLang('en');
@@ -35,8 +29,6 @@ export class AppComponent {
     setInterval(() => {
       this.today = Date.now();
     }, 60000);
-
-    // this.getTrendingRepositories();
 
     this.trendingRepositoriesColumns = [
       {field: 'author', header: 'Author'},
@@ -53,25 +45,5 @@ export class AppComponent {
     } else {
       this.currentLanguageEng = true;
     }
-  }
-
-  getTrendingRepositories(event: LazyLoadEvent) {
-    this.loading = true;
-    this.trendingRepositoriesService.getAllTrendingRepositories().then((result) => {
-      this.totalTrendingRepositories = result;
-      this.pageTrendingRepositories = result.slice(event.first, (event.first + event.rows));
-      console.log(result);
-      this.totalNumberOfTrendingRepositories = this.totalTrendingRepositories.length;
-      this.loading = false;
-    }).catch((error) => {
-      console.error(error);
-    });
-    this.loading = false;
-  }
-
-  loadTrendingRepositoriesLazy(event: LazyLoadEvent) {
-      this.loading = true;
-      this.getTrendingRepositories(event);
-      this.loading = false;
   }
 }

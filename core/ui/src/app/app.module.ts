@@ -2,7 +2,6 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {Page1Component} from './pages/page1/page1.component';
 import {Page2Component} from './pages/page2/page2.component';
 
 import {HttpClient, HttpClientModule} from '@angular/common/http';
@@ -40,6 +39,8 @@ import {
 import {FormsModule} from "@angular/forms";
 import {TrendingRepositoriesService} from "./services/trendingRepositories.service";
 import {Service2Service} from "./services/service2.service";
+import {HomeComponent} from "./pages/home/home.component";
+import {AboutComponent} from "./pages/about/about.component";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -49,8 +50,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    Page1Component,
-    Page2Component
+    HomeComponent,
+    Page2Component,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
