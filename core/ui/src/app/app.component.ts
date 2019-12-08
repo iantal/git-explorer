@@ -29,12 +29,6 @@ export class AppComponent {
     setInterval(() => {
       this.today = Date.now();
     }, 60000);
-
-    this.trendingRepositoriesColumns = [
-      {field: 'author', header: 'Author'},
-      {field: 'name', header: 'Name'},
-      {field: 'language', header: 'Language'}
-    ];
   }
 
   changeLanguage(language: string) {

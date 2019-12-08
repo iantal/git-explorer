@@ -1,5 +1,4 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
+import {Component} from '@angular/core';
 import {TrendingRepositoriesService} from "../../services/trendingRepositories.service";
 import {TrendingRepositories} from "../../components/TrendingRepositories";
 import {LazyLoadEvent} from "primeng/api";
@@ -18,7 +17,11 @@ export class HomeComponent {
   totalNumberOfTrendingRepositories: number;
 
   constructor(private translate: TranslateService, private trendingRepositoriesService: TrendingRepositoriesService) {
-
+    this.trendingRepositoriesColumns = [
+      {field: 'author', header: 'Author'},
+      {field: 'name', header: 'Name'},
+      {field: 'language', header: 'Language'}
+    ];
   }
 
   getTrendingRepositories(event: LazyLoadEvent) {

@@ -9,6 +9,7 @@
     "HEADLINE3": "Top Trending Repositories"
   },
   "TOP-REPOSITORIES": {
+    "RANK": "Rank #",
     "AUTHOR": "Author",
     "NAME": "Name",
     "LANGUAGE": "Language",

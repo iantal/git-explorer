@@ -35,14 +35,17 @@
                [responsive]="true">
         <ng-template pTemplate="header" let-columns>
           <tr>
+            <th style="background: #a0caf3;">{{ 'TOP-REPOSITORIES.RANK' | translate }}</th>
             <th style="background: #a0caf3;">{{ 'TOP-REPOSITORIES.AUTHOR' | translate }}</th>
             <th style="background: #a0caf3;">{{ 'TOP-REPOSITORIES.NAME' | translate }}</th>
             <th style="background: #a0caf3;">{{ 'TOP-REPOSITORIES.LANGUAGE' | translate }}</th>
           </tr>
         </ng-template>
 
-        <ng-template pTemplate="body" let-rowData let-columns="columns">
+        <ng-template pTemplate="body" let-rowData let-columns="columns" let-rowIndex="rowIndex">
           <tr [pSelectableRow]="rowData">
+            <td>{{rowIndex + 1}}</td>
+
             <td *ngFor="let col of columns">
               {{rowData[col.field]}}
             </td>

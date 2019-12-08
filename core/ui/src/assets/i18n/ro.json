@@ -9,6 +9,7 @@
     "HEADLINE3": "Repository-uri de top"
   },
   "TOP-REPOSITORIES": {
+    "RANK": "Pozitie #",
     "AUTHOR": "Autor",
     "NAME": "Nume",
     "LANGUAGE": "Limbaj",
