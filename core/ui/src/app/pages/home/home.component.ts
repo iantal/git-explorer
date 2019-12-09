@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {TrendingRepositoriesService} from "../../services/trendingRepositories.service";
 import {TrendingRepositories} from "../../components/TrendingRepositories";
-import {LazyLoadEvent} from "primeng/api";
+import {LazyLoadEvent, MenuItem} from "primeng/api";
 import {TranslateService} from "@ngx-translate/core";
 
 @Component({
@@ -15,6 +15,8 @@ export class HomeComponent {
   loading: boolean = false;
   trendingRepositoriesColumns: Array<any> = [];
   totalNumberOfTrendingRepositories: number;
+  selectedTrendingRepository: TrendingRepositories;
+  contextMenuItems: MenuItem[];
 
   constructor(private translate: TranslateService, private trendingRepositoriesService: TrendingRepositoriesService) {
     this.trendingRepositoriesColumns = [
@@ -22,6 +24,14 @@ export class HomeComponent {
       {field: 'name', header: 'Name'},
       {field: 'language', header: 'Language'}
     ];
+
+    this.contextMenuItems = [
+      { label: 'View Repository', icon: 'pi pi-search', command: (event) => this.viewTrendingRepository(this.selectedTrendingRepository) }
+    ];
+  }
+
+  viewTrendingRepository(trendingRepository: TrendingRepositories) {
+    window.open(trendingRepository.url, "_blank");
   }
 
   getTrendingRepositories(event: LazyLoadEvent) {

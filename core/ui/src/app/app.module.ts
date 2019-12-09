@@ -28,7 +28,7 @@ import {ChartModule} from 'primeng/chart';
 import {ChartsModule, ThemeService} from 'ng2-charts';
 import {NumberPickerModule} from 'ng-number-picker';
 import {
-  CalendarModule,
+  CalendarModule, ContextMenuModule,
   DropdownModule,
   InputTextareaModule,
   InputTextModule,
@@ -72,7 +72,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     TableModule, ChartModule, ChartsModule, NumberPickerModule, CalendarModule,
     FormsModule, MatNativeDateModule, MatDatepickerModule, SplitButtonModule,
     MatFormFieldModule, MatInputModule, InputTextModule, InputTextareaModule,
-    DropdownModule, MatKeyboardModule, MessagesModule, MatIconModule, MatListModule, OrderListModule, PanelModule
+    DropdownModule, MatKeyboardModule, MessagesModule, MatIconModule, MatListModule, OrderListModule, PanelModule, ContextMenuModule
   ],
   providers: [{provide: MAT_DATE_LOCALE, useValue: 'ro'},
     {provide: LocationStrategy, useClass: HashLocationStrategy},
