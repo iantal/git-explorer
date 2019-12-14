@@ -29,7 +29,7 @@ import {ChartsModule, ThemeService} from 'ng2-charts';
 import {NumberPickerModule} from 'ng-number-picker';
 import {
   CalendarModule, ContextMenuModule,
-  DropdownModule,
+  DropdownModule, GMapModule,
   InputTextareaModule,
   InputTextModule,
   MessageService,
@@ -72,7 +72,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     TableModule, ChartModule, ChartsModule, NumberPickerModule, CalendarModule,
     FormsModule, MatNativeDateModule, MatDatepickerModule, SplitButtonModule,
     MatFormFieldModule, MatInputModule, InputTextModule, InputTextareaModule,
-    DropdownModule, MatKeyboardModule, MessagesModule, MatIconModule, MatListModule, OrderListModule, PanelModule, ContextMenuModule
+    DropdownModule, MatKeyboardModule, MessagesModule, MatIconModule, MatListModule, OrderListModule, PanelModule, ContextMenuModule, GMapModule
   ],
   providers: [{provide: MAT_DATE_LOCALE, useValue: 'ro'},
     {provide: LocationStrategy, useClass: HashLocationStrategy},

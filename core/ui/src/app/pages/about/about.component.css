@@ -62,3 +62,48 @@
   background-color: var(--light-color) !important;
 }
 
+.about-line1 {
+  font-size: 76px !important;
+  letter-spacing: -2px;
+  font-family: Material Icons;
+  margin-top: 40px;
+}
+
+.about-line2 {
+  color: white;
+  font-size: x-large;
+  font-family: Material;
+}
+
+.about-description {
+  color: black;
+  font-size: x-large;
+  font-family: Material;
+}
+
+.about-description-headline {
+   color: #0070c0;
+   font-size: 36px !important;
+   letter-spacing: -1px;
+   font-family: Material;
+   margin-top: 40px;
+   font-weight: bold;
+ }
+
+.newline-paragraph {
+  white-space: pre-wrap;
+}
+
+.about-description-text {
+  color: black;
+  font-size: 24px !important;
+  letter-spacing: -1px;
+  font-family: Material;
+}
+
+.about-description-text em {
+  color: red;
+  font-size: 24px !important;
+  letter-spacing: -1px;
+  font-family: Material;
+}

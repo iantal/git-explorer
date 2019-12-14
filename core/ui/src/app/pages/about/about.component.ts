@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
+import {GMapModule} from 'primeng/gmap';
 
 @Component({
   selector: 'app-about',
@@ -11,7 +12,6 @@ export class AboutComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
-
 }
