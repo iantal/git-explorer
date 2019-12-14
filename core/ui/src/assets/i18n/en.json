@@ -20,6 +20,13 @@
     "DESCRIPTION": "YOU ARE ON PAGE 2!"
   },
   "ABOUT": {
-    "DESCRIPTION": "YOU ARE ON THE ABOUT PAGE!"
+    "LINE1": "GITHUB IS AWESOME!",
+    "LINE2": "We let everyone know that!",
+    "HEADLINE1": "Who we are?",
+    "TEXT1": "We are 2 Master's degree students @ Polytechnic University of Timisoara, Romania. \nWe are passionated about technology and we do work as software developers. Working everyday with Git and also having our personal projects having Git as a version-control system, we definitely know how important GitHub is.\n",
+    "HEADLINE2": "Why this Explorer?",
+    "TEXT2": "As of May 2019, GitHub reports having over 37 million users and more than 100 million repositories. This is a huge amount of data to search through. By taking only the trending information, people will be able to easily find and learn what matters the most right now.",
+    "HEADLINE3": "Happy to meet you!",
+    "TEXT3": "We are happy to see you visiting our website! If you want to give a helpful hand or any kind of feedback, you can reach out to us on, obviously, GitHub:"
   }
 }

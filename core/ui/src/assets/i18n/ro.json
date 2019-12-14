@@ -20,6 +20,14 @@
     "DESCRIPTION": "SUNTETI PE PAGINA 2!"
   },
   "ABOUT": {
-    "DESCRIPTION": "SUNTETI PE PAGINA DESPRE!"
+    "LINE1": "GITHUB E EXTRAORDINAR!",
+    "LINE2": "Noi avem grija sa stie asta toata lumea!",
+    "HEADLINE1": "Cine suntem?",
+    "TEXT1": "Suntem 2 studenti masteranzi @ Universitatea Politehnica Timisoara, Romania. \nSuntem pasionati de tehnologie si lucram ca software developers. Lucrand in fiecare zi cu Git si avand de asemenea proiectele personale cu sistemul de versionare Git, cu siguranta stim de important este GitHub.\n",
+    "HEADLINE2": "De ce acest Explorer?",
+    "TEXT2": "In Mai 2019, rapoartele GitHub arata ca sunt peste 37 de milioane de utilizatori si peste 100 de milioane de repository-uri. Aceasta este o imensa baza de date prin care poti cauta. Luand doar informatia ce este in trending, oamenii vor putea cu usurinta sa gaseasca si sa invete ce conteaza cel mai mult in acest moment.",
+    "HEADLINE3": "Bucurosi sa te cunoastem!",
+    "TEXT3": "Suntem bucurosi de vizita ta pe site-ul nostru! Daca doresti sa oferi o mana de ajutor sau un feedback, poti sa ne contactezi, evident, pe GitHub:"
+
   }
 }
