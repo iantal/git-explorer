@@ -43,7 +43,10 @@ import {HomeComponent} from "./pages/home/home.component";
 import {AboutComponent} from "./pages/about/about.component";
 import { TrendingRepositoriesComponent } from './pages/trending-repositories/trending-repositories.component';
 import { TrendingDevelopersComponent } from './pages/trending-developers/trending-developers.component';
+import {SelectButtonModule} from 'primeng/selectbutton';
+import { SearchComponent } from './pages/search/search.component';
 
+import {TabViewModule} from 'primeng/tabview';
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient, 'assets/i18n/', '.json');
@@ -57,6 +60,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AboutComponent,
     TrendingRepositoriesComponent,
     TrendingDevelopersComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,7 +77,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ButtonModule,
     HttpClientModule,
     DialogModule,
-    TableModule, ChartModule, ChartsModule, NumberPickerModule, CalendarModule,
+    TabViewModule,
+    TableModule, ChartModule, ChartsModule, NumberPickerModule, CalendarModule, SelectButtonModule,
     FormsModule, MatNativeDateModule, MatDatepickerModule, SplitButtonModule,
     MatFormFieldModule, MatInputModule, InputTextModule, InputTextareaModule,
     DropdownModule, MatKeyboardModule, MessagesModule, MatIconModule, MatListModule, OrderListModule, PanelModule, ContextMenuModule, GMapModule
