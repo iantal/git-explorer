@@ -41,6 +41,8 @@ import {TrendingRepositoriesService} from "./services/trendingRepositories.servi
 import {Service2Service} from "./services/service2.service";
 import {HomeComponent} from "./pages/home/home.component";
 import {AboutComponent} from "./pages/about/about.component";
+import { TrendingRepositoriesComponent } from './pages/trending-repositories/trending-repositories.component';
+import { TrendingDevelopersComponent } from './pages/trending-developers/trending-developers.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -52,7 +54,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AppComponent,
     HomeComponent,
     ExploreComponent,
-    AboutComponent
+    AboutComponent,
+    TrendingRepositoriesComponent,
+    TrendingDevelopersComponent,
   ],
   imports: [
     BrowserModule,

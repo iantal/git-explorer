@@ -1,12 +1,16 @@
 {
   "DASHBOARD": {
     "HOME": "HOME",
+    "TOP_REPOSITORIES": "TOP REPOSITORIES",
+    "TOP_DEVELOPERS": "TOP DEVELOPERS",
+    "TOP_LANGUAGES": "TOP LANGUAGES",
     "EXPLORE": "EXPLORE",
     "ABOUT": "ABOUT",
     "REPOSITORIES": "Repositories",
     "HEADLINE1": "Never miss what's trending right now!",
     "HEADLINE2": "See the latest tops and get inspired by the latest and greatest repositories on GitHub",
-    "HEADLINE3": "Top Trending Repositories"
+    "HEADLINE3": "Top Trending Repositories",
+    "HEADLINE4": "Top Trending Developers"
   },
   "TOP-REPOSITORIES": {
     "RANK": "Rank #",
@@ -14,6 +18,14 @@
     "NAME": "Name",
     "LANGUAGE": "Language",
     "TR-LIST": "List of Top Repositories",
+    "FILTER": "Filter by name"
+  },
+  "TOP-DEVELOPERS": {
+    "RANK": "Rank #",
+    "NAME": "Name",
+    "USERNAME": "Username",
+    "AVATAR": "Avatar",
+    "TR-LIST": "List of Top Developers",
     "FILTER": "Filter by name"
   },
   "EXPLORE": {

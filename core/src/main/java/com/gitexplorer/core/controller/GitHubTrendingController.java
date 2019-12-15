@@ -40,14 +40,4 @@ public class GitHubTrendingController {
         CloseableHttpResponse response = httpclient.execute(httpGet);
         return new ObjectMapper().readValue(response.getEntity().getContent(), Developer[].class);
     }
-
-    @RequestMapping("/languages")
-    public Developer[] topLanguages(
-            @RequestParam(value = "since", defaultValue = "monthly") String since,
-            @RequestParam(value = "language", defaultValue = "") String language
-    ) throws IOException {
-        HttpGet httpGet = new HttpGet("https://github-trending-api.now.sh/languages");
-        CloseableHttpResponse response = httpclient.execute(httpGet);
-        return new ObjectMapper().readValue(response.getEntity().getContent(), Developer[].class);
-    }
 }

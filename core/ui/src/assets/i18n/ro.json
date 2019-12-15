@@ -1,12 +1,16 @@
 {
   "DASHBOARD": {
     "HOME": "ACASA",
+    "TOP_REPOSITORIES": "TOP REPOSITORY-URI",
+    "TOP_DEVELOPERS": "TOP DEVELOPERI",
+    "TOP_LANGUAGES": "TOP LIMBAJE",
     "EXPLORE": "EXPLOREAZA",
     "ABOUT": "DESPRE",
     "REPOSITORIES": "Repository-uri",
     "HEADLINE1": "Nu rata tendintele in materie de cod!",
     "HEADLINE2": "Vezi ultimele topuri si fii inspirat de cele mai populare repository-uri de pe GitHub",
-    "HEADLINE3": "Repository-uri de top"
+    "HEADLINE3": "Repository-uri de top",
+    "HEADLINE4": "Developeri de top"
   },
   "TOP-REPOSITORIES": {
     "RANK": "Pozitie #",
@@ -14,6 +18,14 @@
     "NAME": "Nume",
     "LANGUAGE": "Limbaj",
     "TR-LIST": "Lista repository-uri de top",
+    "FILTER": "Filtru dupa nume"
+  },
+  "TOP-DEVELOPERS": {
+    "RANK": "Rank #",
+    "NAME": "Nume",
+    "USERNAME": "Username",
+    "AVATAR": "Avatar",
+    "TR-LIST": "Lista developeri de top",
     "FILTER": "Filtru dupa nume"
   },
   "EXPLORE": {

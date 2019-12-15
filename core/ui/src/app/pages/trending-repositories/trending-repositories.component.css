@@ -1,0 +1,64 @@
+.group_buttons {
+    width: 200px !important;
+    height: 80px !important;
+    font-size: 25px;
+    font-weight: bold;
+    background: var(--accent-color);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .line_buttons {
+    width: 200px !important;
+    height: 80px !important;
+    font-size: 25px;
+    background: var(--accent-color);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .post_buttons {
+    width: 200px !important;
+    height: 80px !important;
+    font-size: 25px;
+    background: var(--accent-color);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    width: 100%;
+    background-color: var(--light-color);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  ::ng-deep body .ui-dataview .ui-dataview-header {
+    background: var(--light-color) !important;
+    color: white;
+    border: none !important;
+  }
+  
+  ::ng-deep body .ui-paginator {
+    background-color: var(--light-color) !important;
+  }
+  
+  ::ng-deep body .ui-dropdown {
+    width: 230px !important;
+  }
+  
+  
+  ::ng-deep body .ui-dataview .ui-dataview-content {
+    background: var(--dark-color);
+    border: none !important;
+  }
+  
+  ::ng-deep body .ui-button:enabled:not(:focus):hover, body .ui-datepicker-buttonpane > button:enabled:not(:focus):hover {
+    background-color: var(--light-color) !important;
+  }
+  
