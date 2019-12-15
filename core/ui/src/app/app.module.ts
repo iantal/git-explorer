@@ -2,7 +2,6 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {ExploreComponent} from './pages/explore/explore.component';
 
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
@@ -56,7 +55,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   declarations: [
     AppComponent,
     HomeComponent,
-    ExploreComponent,
     AboutComponent,
     TrendingRepositoriesComponent,
     TrendingDevelopersComponent,
