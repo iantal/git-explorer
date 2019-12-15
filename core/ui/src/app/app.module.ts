@@ -2,7 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {Page2Component} from './pages/page2/page2.component';
+import {ExploreComponent} from './pages/explore/explore.component';
 
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
@@ -51,7 +51,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   declarations: [
     AppComponent,
     HomeComponent,
-    Page2Component,
+    ExploreComponent,
     AboutComponent
   ],
   imports: [

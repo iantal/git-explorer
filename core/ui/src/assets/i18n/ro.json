@@ -1,7 +1,7 @@
 {
   "DASHBOARD": {
     "HOME": "ACASA",
-    "PAGE2": "PAGINA 2",
+    "EXPLORE": "EXPLOREAZA",
     "ABOUT": "DESPRE",
     "REPOSITORIES": "Repository-uri",
     "HEADLINE1": "Nu rata tendintele in materie de cod!",
@@ -16,8 +16,8 @@
     "TR-LIST": "Lista repository-uri de top",
     "FILTER": "Filtru dupa nume"
   },
-  "PAGE2": {
-    "DESCRIPTION": "SUNTETI PE PAGINA 2!"
+  "EXPLORE": {
+    "DESCRIPTION": "SUNTETI PE PAGINA EXPLOREAZA!"
   },
   "ABOUT": {
     "LINE1": "GITHUB E EXTRAORDINAR!",

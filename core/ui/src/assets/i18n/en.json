@@ -1,7 +1,7 @@
 {
   "DASHBOARD": {
     "HOME": "HOME",
-    "PAGE2": "PAGE 2",
+    "EXPLORE": "EXPLORE",
     "ABOUT": "ABOUT",
     "REPOSITORIES": "Repositories",
     "HEADLINE1": "Never miss what's trending right now!",
@@ -16,8 +16,8 @@
     "TR-LIST": "List of Top Repositories",
     "FILTER": "Filter by name"
   },
-  "PAGE2": {
-    "DESCRIPTION": "YOU ARE ON PAGE 2!"
+  "EXPLORE": {
+    "DESCRIPTION": "YOU ARE ON EXPLORE PAGE!"
   },
   "ABOUT": {
     "LINE1": "GITHUB IS AWESOME!",
