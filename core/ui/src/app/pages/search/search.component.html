@@ -16,11 +16,36 @@
         </div>
     </div>
 
-    <div class=" ui-g-7" style="text-align: left;">
-        <p>jskhdsadjkhsakdjasdhad</p>
+    <div class=" ui-g-12" style="text-align: left;">
+            <div>
+                    <p-table #dt [columns]="trendingRepositoriesColumns" [value]="pageTrendingRepositories" [resizableColumns]="true"
+                             [lazy]="true"
+                             [loading]="loading" loadingIcon="fa-spinner"
+                             [paginator]="false" [rows]="5" [totalRecords]="totalNumberOfTrendingRepositories"
+                             [responsive]="true" [(contextMenuSelection)]="selectedTrendingRepository" [contextMenu]="cm">
+                      <ng-template pTemplate="header" let-columns>
+                        <tr>
+                          <th style="background: #a0caf3;">{{ 'TOP-REPOSITORIES.RANK' | translate }}</th>
+                          <th style="background: #a0caf3;">{{ 'TOP-REPOSITORIES.AUTHOR' | translate }}</th>
+                          <th style="background: #a0caf3;">{{ 'TOP-REPOSITORIES.NAME' | translate }}</th>
+                          <th style="background: #a0caf3;">{{ 'TOP-REPOSITORIES.LANGUAGE' | translate }}</th>
+                        </tr>
+                      </ng-template>
+              
+                      <ng-template pTemplate="body" let-rowData let-columns="columns" let-rowIndex="rowIndex">
+                        <tr [pContextMenuRow]="rowData">
+                          <td>{{rowIndex + 1}}</td>
+              
+                          <td *ngFor="let col of columns">
+                            {{rowData[col.field]}}
+                          </td>
+                        </tr>
+                      </ng-template>
+                    </p-table>
+              
+                    <p-contextMenu #cm [model]="contextMenuItems"></p-contextMenu>
+                  </div>
     </div>
 
-    <div class="ui-g-5" style="text-align: left;">
-        <p>sdadkjskdsks</p>
-    </div>
+    
 </div>

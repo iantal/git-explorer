@@ -15,7 +15,7 @@ import { Item } from 'src/app/components/Item';
 export class SearchComponent {
   totalTrendingRepositories: SearchResult[];
   items: Item[];
-  pageTrendingRepositories: SearchResult[];
+  pageTrendingRepositories: Item[];
   loading: boolean = false;
   trendingRepositoriesColumns: Array<any> = [];
   totalNumberOfTrendingRepositories: number;
@@ -35,6 +35,13 @@ export class SearchComponent {
       { label: 'Description', value: 'description', icon: 'fa fa-fw fa-cc-visa' },
       { label: 'Repository', value: 'repository', icon: 'fa fa-fw fa-cc-mastercard' }
     ];
+
+    this.trendingRepositoriesColumns = [
+      {field: 'full_name', header: 'Author'},
+      {field: 'html_url', header: 'Name'},
+      {field: 'forks_count', header: 'Language'}
+    ];
+
   }
 
   clear() {
@@ -47,12 +54,11 @@ export class SearchComponent {
     this.searchService.getResult(this.tcode, this.selectedType).then((result) => {
       this.items = result["items"];
       console.log(this.items);
-      // this.pageTrendingRepositories = result.slice(event.first, (event.first + event.rows));
-      // console.log("Home component:");
-      // console.log(result)
-      // console.log(this.pageTrendingRepositories);
-      // this.totalNumberOfTrendingRepositories = this.totalTrendingRepositories.length;
-      // this.loading = false;
+      this.pageTrendingRepositories = this.items;
+      console.log("Home component:");
+      console.log(this.pageTrendingRepositories);
+      this.totalNumberOfTrendingRepositories = result["total_count"];
+      this.loading = false;
     }).catch((error) => {
       console.error(error);
     });
