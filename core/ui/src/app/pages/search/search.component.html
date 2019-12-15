@@ -8,8 +8,8 @@
                 </div>
                 <div class="col" style="margin-top: 100px;">
                         <div class="ui-inputgroup">
-                                <button pButton type="button" label="Search"></button>
-                                <input type="text" pInputText placeholder="Keyword">         
+                                <button pButton type="button" label="Search" (click)="doSearch($event)" ></button>
+                                <input (input)="tcode=$event.target.value" type="text" pInputText placeholder="Keyword">         
                         </div>
                 </div>
             </div>
